@@ -1,0 +1,17 @@
+/* Apply snap properties to the container */
+.main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  
+  /* Apply snap properties to the child elements */
+  .master {
+    scroll-snap-align: start;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* Add other styling properties as needed */
+  }
+  
