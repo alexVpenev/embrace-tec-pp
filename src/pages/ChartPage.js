@@ -1,23 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import LineChart from "../components/LineChart";
 import { UserData } from "../Data";
 import "./ChartPage.css";
 
 function ChartPage() {
-  const [scrollSnapType, setScrollSnapType] = useState("none");
-  const mainRef = useRef(null);
-
-  useEffect(() => {
-    if (mainRef.current) {
-      // Set scroll-snap-type dynamically based on the height of the container
-      setScrollSnapType(
-        mainRef.current.clientHeight > window.innerHeight
-          ? "y mandatory"
-          : "none"
-      );
-    }
-  }, []);
-
   const userData = {
     labels: UserData.map((data) => data.date),
     datasets: [
@@ -36,7 +22,7 @@ function ChartPage() {
   };
 
   return (
-    <main className="main" ref={mainRef} style={{ scrollSnapType }}>
+    <main className="main">
       <div className="master">
         <LineChart chartData={userData} />
       </div>

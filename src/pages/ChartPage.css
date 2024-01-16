@@ -3,15 +3,23 @@
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
   }
   
   /* Apply snap properties to the child elements */
   .master {
-    scroll-snap-align: start;
+    /* width: 100vh; */
+    background-color: rgb(255, 255, 255);
+    /* opacity: 70%; */
     text-align: center;
     justify-content: center;
     display: flex;
     align-items: center;
-    /* Add other styling properties as needed */
+    max-height: 100vh;
+    margin: 50px auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   

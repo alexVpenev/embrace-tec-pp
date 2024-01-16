@@ -1,0 +1,58 @@
+.main-intro {
+
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-image: url('../media/health-background.jpg');
+    background-size: cover; /* This property ensures that the background image covers the entire element */
+    background-repeat: no-repeat;
+
+}
+
+
+.ebigo {
+    height: 100vh;
+    /* width: 100vh; */
+    background-color: black;
+    opacity: 70%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    max-height: 82vh;
+    margin: 50px auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    flex: 1;
+    margin-right: 100px;
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .text-container {
+    flex: 2;
+    text-align: justify;
+  }
+  
+  .zaglavie {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  
+  .opisanie {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 25px;
+  }
